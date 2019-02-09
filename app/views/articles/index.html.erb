@@ -1,0 +1,15 @@
+<h1>Articles de mon blog</h1>
+
+<!-- boucle = nb d'enregistrements -->
+
+<% @potins.each do |un_article| %>
+
+  <p><%= un_article.titre %></p><!-- correspond à Article.titre -->
+  <p><%= un_article.contenu %></p><!-- correspond à Article.contenu -->
+  <p> ------------------------------------</p>
+
+<% end %>
+
+
+
+
